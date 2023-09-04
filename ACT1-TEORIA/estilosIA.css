@@ -16,9 +16,7 @@ body {
     overflow: visible;
     position: fixed;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 130px;
+    width: 100%;
 }
 
 .navbar ul {
@@ -79,8 +77,8 @@ body {
 
 /* Estilos para el contenido principal */
 .content {
-    margin-top: 0px; /* Asegura que el contenido no quede oculto detrás de la barra de navegación */
-    margin-left: 130px;
+    margin-top: 80px; /* Asegura que el contenido no quede oculto detrás de la barra de navegación */
+    margin-bottom: 130px;
     text-align: center;
     padding: 20px;
 }
