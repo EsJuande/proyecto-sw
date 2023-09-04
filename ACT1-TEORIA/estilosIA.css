@@ -1,0 +1,248 @@
+/* Reset de estilos para quitar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #282a36;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 130px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: #f8f8f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambia el color del enlace cuando se pasa el mouse sobre él */
+.navbar a:hover {
+    background-color: #44475a;
+    color: #bd93f9;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282a36;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #f8f8f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #44475a;
+    color: #bd93f9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    margin-top: 0px; /* Asegura que el contenido no quede oculto detrás de la barra de navegación */
+    margin-left: 130px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #282a36;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    color: #f8f8f2;
+    text-decoration: none;
+}
+
+/* Estilos para los párrafos en el footer */
+footer p {
+    margin: 5px 0;
+    color: #bd93f9;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    width: 300px;
+    background-color: #44475a;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilos para la imagen en la parte superior */
+.card-top img {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+/* Estilos para el nombre en la parte inferior */
+.card-bottom p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #f8f8f2;
+}
+
+.card-bottom h2 {
+    color: #f8f8f2;
+}
+
+/* Estilos para los enlaces en la parte inferior */
+.links a {
+    color: #bd93f9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    color: #ff79c6;
+}
+
+/* Estilos para el correo electrónico en la parte inferior */
+.card-bottom p:last-child {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilos para la tarjeta con el formulario */
+.card-contact-form {
+    background-color: #44475a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilos para el formulario y los campos */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #bd93f9;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bd93f9;
+    border-radius: 5px;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #6272a4;
+}
+
+input[type="submit"] {
+    background-color: #6272a4;
+    color: #f8f8f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: not-allowed;
+}
+
+input[type="submit"]:hover {
+    background-color: #44475a;
+}
+
+/* Estilos para el encabezado centrado */
+.centered {
+    text-align: center;
+    padding: 20px;
+    color: #bd93f9;
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image {
+    flex: 1;
+    margin: 10px;
+    border: 2px solid #6272a4;
+    padding: 10px;
+}
+
+.image:hover {
+    background-color: #44475a;
+    border-color: #6272a4;
+    transition-duration: 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
